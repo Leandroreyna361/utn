@@ -1,0 +1,42 @@
+
+img {
+    width: 125px;
+    height: auto;
+    margin: 3px;
+}
+body {
+    background-color:rgb(245, 221, 161);
+}
+.contenedor {
+    background-color: rgb(163, 223, 223);
+    display: inline-flex;
+    flex-direction: column;
+    /*flex-direction: row-reverse;*/
+    align-items: flex-end;
+    padding: 20px;
+    height: 450px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+      /*Pruebas*/
+/*.contenedor {
+background-color: rgb(157, 233, 233);
+border: 2px solid black;
+padding: 10px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: inline-flex;
+flex-direction: column;
+}
+/*.contenedordeimagen {
+ flex-direction: column;
+ align-content: flex-start;
+}*/

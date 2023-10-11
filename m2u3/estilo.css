@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(241, 209, 167);
+    font-size: medium;
+}
+#conte{
+    background: rgb(133, 231, 120);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 3px;
+    /*display: inline-flex;*/
+}
+h1{
+    background:rgb(202, 102, 102);
+    width: 150px;
+}
+nav{
+    background: rgb(184, 226, 87);
+    width: 125px;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+section{
+    background: rgb(73, 128, 65);
+    width: 250px;
+    float:left;
+    margin: 0 0 0 15px;
+}
+aside{
+    background: rgb(70, 155, 129);
+    width: 200px;
+    float: right;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    margin: 10px 10px 10px 10px;
+}
+h2{
+    margin: 10px 10px 10px 10px;
+}
+h1{
+    margin: 10px 10px 10px 10px;
+}
+@media (max-width: 800px){
+    nav {
+        float:none;
+        width: auto;
+        margin-top: -1px;
+        border: 1px solid;
+        border-color: black;
+    }
+    section {
+        float: none;
+        width: auto;
+        /*height: 200px;Error de tipeo en el texto, esta condicion , no es necesaria */
+        margin: -6px 0 0 0;
+        border: 1px solid;
+        border-color: black;
+
+    }
+    aside {
+        float: none;
+        width: auto;
+        margin-top: -1px;
+        border: 1px solid;
+        border-color: black;
+    }
+    #conte{
+        width: auto;
+        
+        /*padding: 0%;*/
+        /*flex-direction: column;*/
+    }
+    h1{
+        margin: 0 0 0 0;
+        width: auto;
+        border: 1px solid;
+        border-color: black;
+    }
+    body{
+        font-size: 80%;
+    }
+    
+}

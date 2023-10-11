@@ -1,0 +1,82 @@
+p{
+    color: rgb(148, 25, 25);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+h1{ /*Incroporacion de fuente Lato*/
+    color: rgb(109, 31, 31);
+    font-family: "Lato", sans-serif;
+    font-size: larger;
+    background: linear-gradient(to bottom, rgb(224,250,204) 0%,rgb(187,249,143) 49%,rgb(224,250,204) 100%);
+}
+h2{
+    color: rgb(148, 25, 25);
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    background: linear-gradient(to bottom, rgb(180,227,145) 0%,rgb(97,196,25) 49%,rgb(180,227,145) 100%);
+}
+h3{
+    color: rgb(148, 25, 25);
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+}
+h4{
+    color: rgb(148, 25, 25);
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+}
+ol{
+    color: rgb(155, 78, 78);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+ul{
+    color: rgb(155, 78, 78);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+a{
+    color: rgb(247, 70, 70);
+    font-family: "Oswald", sans-serif;;
+    font-size: 17px;
+}input{
+    color: rgb(247, 70, 70);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(221, 212, 212);
+    border-color: rgb(230, 56, 56);
+    border-width: 1px;
+}
+select{
+    color: rgb(247, 70, 70);
+    background-color: rgb(221, 212, 212);
+    border-color: rgb(230, 56, 56);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-width: 1px;
+}
+input[type="submit"]{
+    color: rgb(43, 129, 62);
+    background-color: rgb(200, 233, 201);
+    border-color: rgb(31, 145, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-width: 1px;
+}
+h3 span{
+    color: rgb(148, 25, 25);
+    font-family: "Oswald", sans-serif;
+    font-size: medium;
+    background: linear-gradient(to bottom, rgb(254,253,244) 0%,rgb(248,236,148) 40%,rgb(248,236,148) 55%,rgb(254,253,244) 100%);
+}
+h1 span{
+    color: rgb(109, 31, 31);
+    font-family: "Oswald", sans-serif;
+    font-size: larger;
+}
+body{
+ text-align:center;
+ align-items: center;
+ width: 90%;
+ margin:auto
+}
+li{
+    list-style-position:inside ;
+}
