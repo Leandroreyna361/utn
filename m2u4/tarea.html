@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba con Bootstrap</title>
+  <link rel="stylesheet" href="../m2u4/css/bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand m-1" href="#">Mi Sitio Web</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#seccion1">Sección 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#seccion2">Sección 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#seccion3">Sección 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5 bg-primary border-primary">
+  <div id="seccion1" class="mb-5">
+    <h2>Sección 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corrupti soluta veniam harum hic odio, excepturi nam, ab facilis aliquam modi. Quas, delectus? Ad atque perspiciatis quasi maiores quo ducimus?.</p>
+  </div>
+
+  <div id="seccion2" class="mb-5">
+    <h2>Sección 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni illo eligendi ex, consequuntur rerum reprehenderit vero nihil maiores veritatis mollitia libero expedita quisquam molestiae qui alias, voluptatem porro dicta!.</p>
+  </div>
+
+</div>
+
+<div class="container  mb-5 bg-secondary border-secondary">
+<h1>Formulario de Contacto</h1>
+<form action="#" method="post">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" class="form-control" required><br>
+
+  <label for="apellido">Apellido:</label><br>
+  <input type="text" id="apellido" name="apellido" class="form-control-sm" required><br>
+
+  <label for="email">Correo Electrónico:</label><br>
+  <input type="email" id="email" name="email" class="form-control-plaintext" required><br>
+
+  <label for="vive-en-capital">¿Vive en la capital?</label><br>
+  <select id="vive-en-capital" name="vive-en-capital" class="form-control-sl">
+    <option value="si">Sí</option>
+    <option value="no">No</option>
+  </select><br><br>
+
+  <input type="submit" value="Enviar" class="btn btn-primary" >
+  <input type="reset" value="Limpiar Campos" class="btn btn-secondary">
+</form>
+</div>
+
+<!-- <footer class="footer"> -->
+ <footer class="footer fixed-bottom bg-dark text-light py-3">
+    <div class="container">
+      <span>&copy; 2023 Mi Página Web</span>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="../m2u4/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
