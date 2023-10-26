@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../m2u4/css/bootstrap.css">
+    <link rel="stylesheet" href="../m3u1/personalizado.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  custom-navbar" style="width: auto;" >
+        <a class="navbar-brand m-1" href="../m3u1/home.html">
+            <img src="../m3u1/Diseño sin título (7).png" alt="logo Prueba" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav mx-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion1">Sección 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion2">Sección 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bold-text" href="../m3u1/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container text-center ">
+        <div class="row">
+            <div class="col-md-6 mt-5" >
+                <h3 class="mb-2">Formulario de contacto</h3>
+                <form>
+                <div class="mb-2" > 
+                  <label for="name">Nombre:</label>
+                  <input type="text" class="is-invalid" id="name" name="name" required>
+                  <div class="invalid-feedback">Este campo es obligatorio.</div>
+                </div> 
+                <div class="mb-2" >  
+                  <label for="surname">Apellido:</label>
+                  <input type="text" id="surname" name="surname">
+                </div> 
+                <div class="mb-2" >
+                  <label for="numero">Celular:</label>
+                  <input type="number" class="is-invalid" id="numero" name="numero" required>
+                  <div class="invalid-feedback">Este campo es obligatorio.</div>
+                </div> 
+                <div class="mb-2">
+                  <label for="email">Email:</label>
+                  <input type="email" class="is-invalid" id="email" name="email" required>
+                  <div class="invalid-feedback">Este campo es obligatorio.</div>
+                </div> 
+                <div class="btn">
+                  <input type="submit" value="Enviar">
+                </div> 
+                </form>
+            </div>
+            <div class="col-md-6 mt-5">
+                <h3> O contactanos por nuestras redes!</h3>
+                <ul class="list-unstyled row">
+                    <li class="col-md-6 mt-5"> 
+                        <div>
+                            <h4>Whatsapp</h4>
+                             <a href="https://wa.me/5493517600043" target="_blank">
+                             <img src="../m3u1/wpgn250px.png" alt="whatsapp contacto" > 
+                             </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 mt-5">
+                        <div>
+                            <h4>Instagram</h4>
+                             <a href="https://instagram.com/misraicesprattas_mihuerta?igshid=MzRlODBiNWFlZA==" target="_blank">
+                             <img src="../m3u1/ipng250px.png" alt="insta contacto">
+                             </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <footer class="footer fixed-bottom custom-navbar text-center text-dark py-3">
+        <div class="container">
+          <span>&copy; 2023 Mi Página Web</span>
+        </div>
+      </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="../m2u4/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
