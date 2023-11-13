@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="personalizado.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  custom-navbar" style="width: auto;" >
+        <a class="navbar-brand m-1" href="index.html">
+            <img src="logo7.png" alt="logo Prueba" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav mx-4">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bold-text " href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">
+                <img src="carritopngfinal.png" alt="carrito Prueba">
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+      
+      <div class="container">
+        <div class="row">
+          <!-- Barra lateral -->
+          <div class="col-md-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title">Filtros</h5>
+                
+                <!-- Categorías -->
+                <h6>Categorías</h6>
+                <ul class="list-group">
+                  <li class="list-group-item">Categoría 1</li>
+                  <li class="list-group-item">Categoría 2</li>
+                  <li class="list-group-item">Categoría 3</li>
+                </ul>
+                
+                <!-- Subcategorías -->
+                <h6>Subcategorías</h6>
+                <ul class="list-group">
+                  <li class="list-group-item">Subcategoría 1</li>
+                  <li class="list-group-item">Subcategoría 2</li>
+                  <li class="list-group-item">Subcategoría 3</li>
+                </ul>
+                
+                <!-- Buscador de productos -->
+                <div class="input-group mt-3">
+                  <input type="text" class="form-control" placeholder="Buscar productos">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Buscar</button>
+                  </div>
+                </div>
+                
+                <!-- Selector de ordenar por precio -->
+                <h6 class="mt-4">Ordenar por precio</h6>
+                <select class="form-control">
+                  <option value="precio-ascendente">Precio Ascendente</option>
+                  <option value="precio-descendente">Precio Descendente</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contenido principal de la tienda -->
+          <div class="col-md-9">
+            <!-- Lista de productos -->
+            <div class="container mb-5">
+                <h2 class="mt-5 mb-4">Tienda</h2>
+                <div class="row">
+                  <div class="col-md-4 mb-1">
+                    <div class="card">
+                      <img src="sas.jpg" class="card-img-top" alt="Artículo 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Artículo 1</h5>
+                        <p class="card-text">Precio: $50</p>
+                        <div class="form-group">
+                          <label for="cantidad1">Cantidad:</label>
+                          <input type="number" id="cantidad1" name="cantidad1" class="form-control" value="1" min="1">
+                        </div>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="sas.jpg" class="card-img-top" alt="Artículo 2">
+                      <div class="card-body">
+                        <h5 class="card-title">Artículo 2</h5>
+                        <p class="card-text">Precio: $65</p>
+                        <div class="form-group">
+                          <label for="cantidad2">Cantidad:</label>
+                          <input type="number" id="cantidad2" name="cantidad2" class="form-control" value="1" min="1">
+                        </div>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito(2)">Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="sas.jpg" class="card-img-top" alt="Artículo 2">
+                      <div class="card-body">
+                        <h5 class="card-title">Artículo 3</h5>
+                        <p class="card-text">Precio: $70</p>
+                        <div class="form-group">
+                          <label for="cantidad2">Cantidad:</label>
+                          <input type="number" id="cantidad2" name="cantidad2" class="form-control" value="1" min="1">
+                        </div>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito(2)">Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                 
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="sas.jpg" class="card-img-top" alt="Artículo 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Artículo 1</h5>
+                          <p class="card-text">Precio: $50</p>
+                          <div class="form-group">
+                            <label for="cantidad1">Cantidad:</label>
+                            <input type="number" id="cantidad1" name="cantidad1" class="form-control" value="1" min="1">
+                          </div>
+                          <button class="btn btn-primary" onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                          <img src="sas.jpg" class="card-img-top" alt="Artículo 1">
+                          <div class="card-body">
+                            <h5 class="card-title">Artículo 1</h5>
+                            <p class="card-text">Precio: $50</p>
+                            <div class="form-group">
+                              <label for="cantidad1">Cantidad:</label>
+                              <input type="number" id="cantidad1" name="cantidad1" class="form-control" value="1" min="1">
+                            </div>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+                          </div>
+                        </div>
+                   </div>
+                   <div class="col-md-4">
+                          <div class="card">
+                            <img src="sas.jpg" class="card-img-top" alt="Artículo 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Artículo 1</h5>
+                              <p class="card-text">Precio: $50</p>
+                              <div class="form-group">
+                                <label for="cantidad1">Cantidad:</label>
+                                <input type="number" id="cantidad1" name="cantidad1" class="form-control" value="1" min="1">
+                              </div>
+                              <button class="btn btn-primary" onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation">
+                  <ul class="pagination justify-content-center mt-4">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="footer  custom-navbar text-center text-dark py-3">
+        <div class="container">
+          <span>&copy; 2023 Mi Página Web</span>
+        </div>
+      </footer>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ <script src="bootstrap.bundle.js"></script>   
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="personalizado.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  custom-navbar" style="width: auto;" >
+        <a class="navbar-brand m-1" href="index.html">
+            <img src="logo7.png" alt="logo Prueba" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav mx-4">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bold-text" href="carrito.html">
+               <img src="carritopngfinal.png" alt="carrito Prueba">
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="mt-5 mb-4">Carrito de Compras</h2>
+        
+        <!-- Lista de productos en el carrito -->
+        <div class="row">
+          <div class="col-md-8">
+            <!-- Productos en el carrito -->
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Producto 1
+                <div class="input-group">
+                  <button class="btn btn-outline-secondary" type="button">-</button>
+                  <input type="text" class="form-control" value="1">
+                  <button class="btn btn-outline-secondary" type="button">+</button>
+                </div>
+                <span class="badge badge-primary badge-pill">$50.00</span>
+              </li>
+              <!-- Agrega más elementos de lista según sea necesario -->
+            </ul>
+          </div>
+      
+          <!-- Resumen del carrito -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Resumen del Carrito</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Subtotal
+                    <span class="badge badge-primary badge-pill">$50.00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Envío
+                    <span class="badge badge-primary badge-pill">$5.00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Total
+                    <span class="badge badge-primary badge-pill">$55.00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Formulario de información de entrega y pago -->
+        <h4 class="mt-5 mb-4">Información de Entrega y Pago</h4>
+        <form class="">
+          <div class="form-group ">
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre y apellido">
+              </div>  
+          <div class="form-group ">
+                <label for="number">Numero de Celular</label>
+                <input type="number" class="form-control" id="direccion" placeholder="Ingresa tu numero de contacto">
+          </div>
+          <div class="form-group ">
+            <label for="direccion">Dirección de Envío</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
+          </div>
+          <div class="form-group">
+            <label for="metodo-entrega">Método de Entrega</label>
+            <select class="form-control" id="metodo-entrega">
+              <option>Entrega a domicilio</option>
+              <option>Retiro en punto PickIt</option>
+              <option>Retiro en tienda</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="forma-pago">Forma de Pago</label>
+            <select class="form-control" id="forma-pago">
+              <option>Tarjeta de crédito</option>
+              <option>Tarjeta de debito</option>
+              <option>Pago en efectivo</option>
+              <option>Transferencia bancaria</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mt-2 mb-2">Realizar Pedido</button>
+        </form>
+      </div>
+
+
+    <footer class="footer  custom-navbar text-center text-dark py-3">
+        <div class="container">
+          <span>&copy; 2023 Mi Página Web</span>
+        </div>
+      </footer>
+</body>
+</html>
