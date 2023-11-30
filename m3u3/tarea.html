@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h2>Funcion encontrar mayor</h2>
+    <p id="resultado"></p>
+    <script>
+     function encontrarMayor() {
+        const numeros = []
+        for (let i = 0; i < 5; i++){
+            const numero = prompt(`Ingrese el numero ${i + 1}:`)
+            numeros.push(parseFloat(numero));
+        }
+        let mayor = numeros[0]
+        for (let i = 1; i < numeros.length; i++){
+            if (numeros[i] > mayor){mayor=numeros[i]}
+        }
+        document.write(`El mayor es ${mayor}`)
+     }
+    encontrarMayor();
+    </script>  
+</body>
+</html>
