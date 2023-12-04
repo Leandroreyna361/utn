@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuadros</title>
+    <style> 
+        body{text-align: center;
+        }
+        .recuadro{
+          width: 105px;
+          height: 105px;
+          border: 2px solid rgb(2, 2, 2);
+          padding: 8px;
+          display: inline-block;
+        }
+        .recuadro:nth-of-type(1){
+          background-color: red;
+        }
+        .recuadro:nth-of-type(2){
+          background-color:green;
+        }
+      
+        .recuadro:nth-of-type(3){
+          background-color: blue;
+        }
+        button{
+            display: block;
+            margin: 20px auto 0;
+        }
+      
+    </style>
+</head>
+<body>
+ <h1>Clickea en alguno de los recuadros y observa la magia! </h1>   
+ 
+ <div class="recuadro" id="recuadro1">RC1</div>
+ <div class="recuadro" id="recuadro2">RC2</div>
+ <div class="recuadro" id="recuadro3">RC3</div>
+ <button id="resetbutton">Resetea</button>
+ <script>
+  const recuadro1= document.getElementById('recuadro1');
+  const recuadro2= document.getElementById('recuadro2'); 
+  const recuadro3= document.getElementById('recuadro3');
+  const resetbutton= document.getElementById('resetbutton');  
+  function cambiarColorFondo(color){
+    document.body.style.backgroundColor = color;
+  }
+  recuadro1.addEventListener('click', function(){
+    cambiarColorFondo('red')
+  })
+  recuadro2.addEventListener('click', function(){
+    cambiarColorFondo('green')
+  })
+  recuadro3.addEventListener('click', function(){
+    cambiarColorFondo('blue')
+  })
+  resetbutton.addEventListener('click', function(){
+    cambiarColorFondo('initial')
+  })
+  
+ </script>
+
+</body>
+</html>

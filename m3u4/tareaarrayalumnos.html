@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alumnos aprobados</h1>
+    <ul id="aprobados"></ul>
+    <h1>Alumnos</h1>
+    <ul id="completo"></ul>
+    <script>
+        var alumnos = [
+            {nombre:'Juan Gomez', nota: 7},
+            {nombre:'Pedro Rodriguez', nota: 4},
+            {nombre:'Roxana Garcia', nota: 8},
+            {nombre:'Luciano Lopez', nota: 5},
+            {nombre:'Fernanda Gimenez', nota: 6},
+            {nombre:'Florencia Martiez', nota: 10},
+            {nombre:'Raul Sanchez', nota: 7},
+            {nombre:'Sandra Figueroa', nota: 8},
+        ]
+        var alumnosAprobados= alumnos.filter(alumnos => alumnos.nota >= 7);
+        var listaAprobados = document.getElementById('aprobados');
+        alumnosAprobados.forEach(alumnos => {listaAprobados.innerHTML +=`<li>${alumnos.nombre} - Nota: ${alumnos.nota}</li>`});
+        var listaCompleta = document.getElementById('completo');
+        alumnos.forEach(alumnos => {listaCompleta.innerHTML += `<li>${alumnos.nombre} - Nota: ${alumnos.nota}</li>`})
+    </script>
+</body>
+</html>

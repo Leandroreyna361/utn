@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea{
+            width: 80%;
+            height: 100px;
+            margin: 20px auto;
+            resize: none;
+        }
+        #contador{
+            color: aquamarine;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdude un texto y te digo cuantos caracteres lo componen</h1>
+    <textarea id="inputText" placeholder="Escribe aqui:"></textarea>
+    <div id="contador">Cantidad de caracteres : 0</div>
+
+    <script>
+        function actualizarContador() {
+            const inputText = document.getElementById('inputText');
+            const contador = document.getElementById('contador');
+            const numCaracteres = inputText.value.length;
+            contador.textContent = `Cantidad de caracteres : ${numCaracteres}`;
+        }
+        document.getElementById('inputText').addEventListener('input',actualizarContador);
+    </script>
+</body>
+</html>
